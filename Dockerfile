@@ -5,7 +5,7 @@ MAINTAINER Amine Benseddik <amine.benseddik@gmail.com>
 
 RUN apt-get update \
   && apt-get install -y python-twisted python-mysqldb \
-		&& rm -rf /var/lib/apt/lists/* \
+  && rm -rf /var/lib/apt/lists/*
 
 COPY ./clustercheck /
 
